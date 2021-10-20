@@ -1,0 +1,25 @@
+<mat-card style="width: 50%;height: 50%; background-color: rosybrown;">
+    <div style="padding-top: 10%; padding-left: 20%;">
+        <p class="heading">Please Enter Your Number:</p>
+        <form [formGroup] = "requiredForm" (ngSubmit) = "onSubmit()">
+            <div class="form-group col">
+                <label class="center-block">
+                    <input class="form" formControlName="number">
+                </label>
+            
+            <div *ngIf="requiredForm.controls['number'].invalid && requiredForm.controls['number'].touched"
+                class="alert alert-danger">
+                <div *ngIf="requiredForm.controls['number'].errors?.required">
+                    Number is required.
+                </div>    
+                <div *ngIf="requiredForm.controls['number'].errors?.pattern">Invalid phone number.</div>
+                
+            </div>
+            
+            </div>    
+            <div class="text-center">
+                <button class="btn">Register</button>
+            </div>
+        </form>
+    </div>
+</mat-card>

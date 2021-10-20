@@ -1,0 +1,322 @@
+<div style="background-color: rgba(170, 169, 167, 0.199); ">
+  <div>
+    <app-navbar></app-navbar>
+
+  </div>
+
+  <div style="padding-left: 10px;">
+    <div id="menu">
+      <b>MENU</b>
+    </div>
+
+    <div>
+
+      <mat-grid-list cols="4" rowHeight="530px">
+        <mat-grid-tile style="border-radius: 25px; border: 30px rgb(255, 255, 255); ">
+          <div style="padding-right: 5px;">
+            <div id="rcorners2" style="background-color: rgb(245, 207, 245); float: top;">
+              <div>
+                <img class="img" src="assets\image\1.png" />
+              </div>
+              <br>
+              <div class="price">
+                <img class="heart" src="assets\image\heart.png" />
+                <a> Price: <span>&#8377;</span>{{price1}} </a>
+              </div>
+              <br>
+              <div>
+                <p class="pizzaName">{{pizzaname1}}</p>
+                <p class="pizzaDescription">{{pizzadescription1}}</p>
+              </div>
+              <div>
+                <mat-form-field appearance="fill" style="width: 100px;  padding-left: 10px;">
+                  <mat-label>Size</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let size of sizes" [value]="size">
+                      {{size}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="width: 180px; float: right;  padding-right: 10px;">
+                  <mat-label>Crust</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let crust of crusts" [value]="crust">
+                      {{crust}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div>
+                <button class="btn">ADD TO CART</button>
+                <button class="btn" style="float: left;">CUSTOMIZE</button>
+              </div>
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile style="border-radius: 25px; border: 30px rgb(255, 255, 255); ">
+          <p></p>
+          <div style="padding-left:5px;">
+            <div id="rcorners2" style="background-color: rgb(245, 207, 245); float: top;">
+              <div>
+                <img class="img" src="assets\image\1.png" />
+              </div>
+              <br>
+              <div class="price">
+                <img class="heart" src="assets\image\heart.png" />
+                <a> Price: <span>&#8377;</span>{{price2}} </a>
+              </div>
+              <br>
+              <div>
+                <p class="pizzaName">{{pizzaname2}}</p>
+                <p class="pizzaDescription">{{pizzadescription2}}</p>
+              </div>
+              <div>
+                <mat-form-field appearance="fill" style="width: 100px;  padding-left: 10px;">
+                  <mat-label>Size</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let size of sizes" [value]="size">
+                      {{size}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="width: 180px; float: right;  padding-right: 10px;">
+                  <mat-label>Crust</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let crust of crusts" [value]="crust">
+                      {{crust}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div>
+                <button class="btn">ADD TO CART</button>
+                <button class="btn" style="float: left;">CUSTOMIZE</button>
+              </div>
+            </div>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile style="border-radius: 25px; border: 30px rgb(255, 255, 255); ">
+          <p></p>
+          <div style="padding-left:5px;">
+            <div id="rcorners2" style="background-color: rgb(245, 207, 245); float: top;">
+              <div>
+                <img class="img" src="assets\image\1.png" />
+              </div>
+              <br>
+              <div class="price">
+                <img class="heart" src="assets\image\heart.png" />
+                <a> Price: <span>&#8377;</span>{{price3}}</a>
+              </div>
+              <br>
+              <div>
+                <p class="pizzaName">{{pizzaname3}}</p>
+                <p class="pizzaDescription">{{pizzadescription3}}</p>
+              </div>
+              <div>
+                <mat-form-field appearance="fill" style="width: 100px;  padding-left: 10px;">
+                  <mat-label>Size</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let size of sizes" [value]="size">
+                      {{size}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="width: 180px; float: right;  padding-right: 10px;">
+                  <mat-label>Crust</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let crust of crusts" [value]="crust">
+                      {{crust}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div>
+                <button class="btn">ADD TO CART</button>
+                <button class="btn" style="float: left;">CUSTOMIZE</button>
+              </div>
+            </div>
+          </div>
+
+
+        </mat-grid-tile>
+       
+        <mat-grid-tile style="border-radius: 25px; border: 30px rgb(255, 255, 255); ">
+          <mat-card>
+          <div style="padding-right: 5px;">
+            <div style="text-align: center; font-weight: 500; font-size: 20px;">My Cart</div>
+           <div>
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th scope="col" style="color: royalblue;">Name</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"style="color: royalblue;">Price</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"style="color: royalblue;">Quantity</th>
+              </tr>
+              </thead>
+              <tr>
+                <th scope="col">Margaritta</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"><span>&#8377;</span>200</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">1</th>
+              </tr>
+            </table>
+           </div>
+            <br>  
+            <p style="margin-left: 60px; color: seagreen;font-weight: 800;">Total:<span>&#8377;</span>200</p>
+           <button mat-raised-button color="accent" style="margin-left: 60px;"(click)="NavigateToExpandedCart()">Done</button>
+          </div>
+        </mat-card>
+        </mat-grid-tile>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <mat-grid-tile style="border-radius: 25px; border: 30px rgb(255, 255, 255); ">
+          <div style="padding-right: 5px;">
+            <div id="rcorners2" style="background-color: rgb(245, 207, 245); float: top;">
+              <div>
+                <img class="img" src="assets\image\1.png" />
+              </div>
+              <br>
+              <div class="price">
+                <img class="heart" src="assets\image\heart.png" />
+                <a> Price: <span>&#8377;</span>{{price4}} </a>
+              </div>
+              <br>
+              <div>
+                <p class="pizzaName">{{pizzaname4}}</p>
+                <p class="pizzaDescription">{{pizzadescription4}}</p>
+              </div>
+              <div>
+                <mat-form-field appearance="fill" style="width: 100px;  padding-left: 10px;">
+                  <mat-label>Size</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let size of sizes" [value]="size">
+                      {{size}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="width: 180px; float: right;  padding-right: 10px;">
+                  <mat-label>Crust</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let crust of crusts" [value]="crust">
+                      {{crust}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div>
+                <button class="btn">ADD TO CART</button>
+                <button class="btn" style="float: left;">CUSTOMIZE</button>
+              </div>
+            </div>
+          </div>
+          <!-- menu5 -->
+        </mat-grid-tile>
+        <mat-grid-tile style="border-radius: 25px; border: 30px rgb(255, 255, 255); ">
+          <div style="padding-right: 5px;">
+            <div id="rcorners2" style="background-color: rgb(245, 207, 245); float: top;">
+              <div>
+                <img class="img" src="assets\image\1.png" />
+              </div>
+              <br>
+              <div class="price">
+                <img class="heart" src="assets\image\heart.png" />
+                <a> Price: <span>&#8377;</span>{{price5}} </a>
+              </div>
+              <br>
+              <div>
+                <p class="pizzaName">{{pizzaname5}}</p>
+                <p class="pizzaDescription">{{pizzadescription5}}</p>
+              </div>
+              <div>
+                <mat-form-field appearance="fill" style="width: 100px;  padding-left: 10px;">
+                  <mat-label>Size</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let size of sizes" [value]="size">
+                      {{size}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="width: 180px; float: right;  padding-right: 10px;">
+                  <mat-label>Crust</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let crust of crusts" [value]="crust">
+                      {{crust}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div>
+                <!-- Adding to cart function here -->
+                <button class="btn" (click)="addToCart(pizzaname5,price5)">ADD TO CART</button>
+                <button class="btn" style="float: left;">CUSTOMIZE</button>
+              </div>
+            </div>
+          </div>
+          <!-- menu6 -->
+        </mat-grid-tile>
+        <mat-grid-tile style="border-radius: 25px; border: 30px rgb(255, 255, 255); ">
+          <div style="padding-right: 5px;">
+            <div id="rcorners2" style="background-color: rgb(245, 207, 245); float: top;">
+              <div>
+                <img class="img" src="assets\image\1.png" />
+              </div>
+              <br>
+              <div class="price">
+                <img class="heart" src="assets\image\heart.png" />
+                <a> Price: <span>&#8377;</span>{{price6}} </a>
+              </div>
+              <br>
+              <div>
+                <p class="pizzaName">{{pizzaname6}}</p>
+                <p class="pizzaDescription">{{pizzadescription6}}</p>
+              </div>
+              <div>
+                <mat-form-field appearance="fill" style="width: 100px;  padding-left: 10px;">
+                  <mat-label>Size</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let size of sizes" [value]="size">
+                      {{size}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill" style="width: 180px; float: right;  padding-right: 10px;">
+                  <mat-label>Crust</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let crust of crusts" [value]="crust">
+                      {{crust}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div>
+                <button class="btn" (click)="addToCart(pizzaname6,price6)">ADD TO CART</button>
+                <button class="btn" style="float: left;">CUSTOMIZE</button>
+              </div>
+            </div>
+          </div>
+        </mat-grid-tile>
